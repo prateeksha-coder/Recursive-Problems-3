@@ -11,12 +11,12 @@ def printcombination(combination, curr, output, n):
     for i in range(len(keypad[combination[curr]])):
 
         output.append(keypad[combination[curr]][i])
-        print(output)
+        #print(output)
 
         printcombination(combination,curr + 1, output, n)
         output.pop()
 
 
-combination = [4,3,4]
+combination = [7,8,9]
 n = len(combination)
 printcombination(combination, 0, [], n)
